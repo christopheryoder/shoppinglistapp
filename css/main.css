@@ -81,8 +81,16 @@ h1 {
 }
 
 ul {
-	margin-left: 50px;
+	padding-left: 50px;
 	line-height: 25px;
+}
+
+#hover {
+	font-weight: bold;
+}
+
+#checked {
+	text-decoration: line-through;
 }
 
 input[type="checkbox"] {
