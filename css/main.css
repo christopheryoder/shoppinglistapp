@@ -1,3 +1,4 @@
+/*CSS Cleanse*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,6 +49,8 @@ table {
 }
 
 /*What follows is my from scratch css code*/
+
+/*Background Picture*/
 html { 
   background: url('images/aisle-background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -56,10 +59,12 @@ html {
   background-size: cover;
 }
 
+/*Page default font*/
 body {
 	font-family: "Courier New", Courier, monospace;
 }
 
+/*Notepad Styling*/
 #notepad {
 	display: block;
 	position: relative;
@@ -73,6 +78,7 @@ body {
 	cursor: default;
 }
 
+/*Shopping List title positioning and style*/
 h1 {
 	text-align: center;
 	font-weight: bold;
@@ -81,17 +87,20 @@ h1 {
 	margin-bottom: 26px;
 }
 
+/*list positioning*/
 ul {
 	padding-left: 50px;
 	padding-bottom: 50px;
 	line-height: 25px;
 }
 
-li:hover {
+/*bold hovered items*/
+li.item:hover {
 	font-weight: bold;
 }
 
-button {
+/*delete button*/
+#x {
 	float: right;
 	margin-right: 50px;
 	font: inherit;
@@ -101,12 +110,14 @@ button {
 	width:18px;
 }
 
+/*checkbox positioning*/
 input[type="checkbox"] {
 	position: relative;
 	top: 2px;
 	margin-right: 20px;
 }
 
+/*input text box*/
 input[type="text"] {
 	position: relative;
 	top: -1px;
@@ -117,6 +128,20 @@ input[type="text"] {
 	line-height: 10px;
 }
 
+/*add button*/
+#add {
+	position: relative;
+	top: -2px;
+	font: inherit;
+	font-weight: normal;
+	padding: 0px 7px 0px 7px;
+	display: table-cell;
+    vertical-align: middle;
+    line-height: 20px;
+    height: 20px;
+}
+
+/*strikethrough checked items*/
 input[type="checkbox"]:checked + label {
 	text-decoration: line-through;
 }
